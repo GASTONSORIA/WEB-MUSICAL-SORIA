@@ -17,7 +17,8 @@
         <h1><a href="../index.html" class="h1__a">Ton Soria</a></h1>
         <nav class="border header__nav"></nav>
             <ul class="nav__ul">
-<!-- ----------------------------------MENU--------------------------------------------------------------- -->            
+
+                <!-- ----------------------------------MENU---------------------------------------------- -->            
                 <li class="ul__li"> <a href="quiero-apoyar-al-proyecto.html" class="li__a">¡Apoya al proyecto!</a></li>
                 <li class="ul__li"> <a href="noticias.html" class="li__a">Blog</a></li>
                 <li class="ul__li"> <a href="epk.html" class="li__a">EPK</a></li>
@@ -28,18 +29,24 @@
         </nav>
     </header>
 
-<!-- ------------------------------Contenido Principal--------------------------------------------------- -->
+    <!-- ------------------------------Contenido Principal--------------------------------------------------- -->
 
     <main>
+        
         <h2 class="article__h2 article__h2--booking">Booking</h2>
+        
         <form class="main__form1 main__form1--booking" action="contacto.php" method="post"
             enctype="application/x-www-form-urlencoded">
+            
             <div class="form__div1 form_div1--booking">
+                
                 <div class="form__div2">
+                    
                     <label for="nombre">Nombre:</label>
                     <input class="div__input div__input--booking" type="text" required name="nombre"
                         placeholder="Ingresa tu nombre"><br>
 
+                    
                     <label for="apellido">Apellido:</label>
                     <input class="div__input div__input--booking" type="text" required name="apellido"
                         placeholder="Ingresa tu apellido"><br>
@@ -55,10 +62,13 @@
                     <label for="whatsapp">Whatsapp</label>
                     <input class="div__input div__input--booking" type="tel" required
                         placeholder="+(Cod de area) Numero cel" name="whatsapp"><br>
+                
                 </div>
 
                 <div class="form__div2">
+                    
                     <label for="evento">Tipo de evento</label>
+                    
                     <select class="div__input div__input--booking" name="evento" id="">
                         <option value="concierto">Concierto</option>
                         <option value="festival">Festival</option>
@@ -82,6 +92,7 @@
 
                     <label for="fecha">Fecha estimada:</label>
                     <input class="div__input div__input--booking" type="date" required name="fecha"><br>
+                
                 </div>
             </div>
 
@@ -89,14 +100,13 @@
                 <legend>Información adicional (opcional)</legend>
                 <textarea class="fieldset__textarea" name="informacionadicional" id="" cols="60" rows="12"
                     placeholder="Escriba la información adicional aquí"></textarea>
-
             </fieldset>
 
             <div class="form__div3">
                 <input class="div2__a div2__a--booking" type="submit" value="enviar"> <br>
-                <input class="div2__a div2__a--booking" type="reset" value="borrar"><br>
-                <input class="div2__a div2__a--booking" type="button" value="sin acciones">
+                <input class="div2__a div2__a--booking" type="reset" value="borrar"><br> 
             </div>
+        
         </form>
     </main>
 
@@ -123,7 +133,7 @@
             <input type="submit" value="Unirme" class="form__input">
         </form>
 
-<!-- ----------------------------------LOGOS RRSS ------------------------------------------------------------>
+        <!-- ----------------------------------LOGOS RRSS ------------------------------------------------------------>
 
         <section class="footer__section">
             <a href="https://www.instagram.com/ton.soria/" target="_blank">

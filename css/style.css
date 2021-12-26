@@ -31,7 +31,8 @@
 
 header {
     grid-area: header;
-    width: 100%;    
+    width: 100%; 
+    
 }
 
 nav {
@@ -43,10 +44,12 @@ nav {
 main {
     grid-area: main;
     width: 100%;
+    
 }
 
 footer {
     grid-area: footer;
+    
 }
 
 
@@ -59,6 +62,14 @@ footer {
 /********************** header **********************/ 
 
 /*--------------- Ton Soria ---------------------*/
+.body__header {
+    
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex-grow: 1;
+    
+}
 
 .h1__a {
     font-family: 'Mansalva', cursive;
@@ -84,11 +95,13 @@ h1 a:hover {
     
     display: flex;
     flex-flow: row wrap;
-    align-items: center;
+    align-items: flex-end;
     justify-content: space-evenly;
-    background-color: khaki;
+    /* background-color: khaki; */
+    background-image: linear-gradient(to top, seashell, khaki);
+
     
-    margin-bottom: 20px;
+    
     
 }
 
@@ -96,8 +109,8 @@ h1 a:hover {
 
 .li__a {
     display: flex;
-    color: inherit;
-    font-weight: 100;
+    color: rgb(124, 92, 4);
+    font-weight: 600;
     text-transform: uppercase;
     font-size: 16px;
     padding: 3px 10px;
@@ -120,6 +133,7 @@ li a:hover {
 display: flex;
 justify-content: center;
 flex-direction: column;
+text-align: justify;
 
 
 }
@@ -130,7 +144,7 @@ flex-direction: column;
     height: 290px;
     width: 290px;
     display:flex;
-    padding: 5px;
+    padding: 20px 5px 5px;
     align-items: center;
     justify-content: center;   
 }
@@ -157,6 +171,7 @@ flex-direction: column;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: 15px;
 }
 
 /*---------- Enlaces a Spotify y Youtube --------*/
@@ -207,13 +222,16 @@ flex-direction: column;
 /**********************footer******************************/
 
 .body__footer {
-    background-color: rgba(227, 255, 227, 0.767);
+    /* background-color: #e3ffe3c4; */
     height: 100%;
     border-top: 2px solid rgba(141, 118, 13, 0.5);
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-image: url(../img/degradado-footer.svg);
+    background-size: cover;
+    color: seashell;
 }
 
 .footer__p {
@@ -368,11 +386,30 @@ flex-direction: column;
     display: flex;
     flex-direction: column;
     align-content: center;
+    justify-content: stretch;
+    width: 100%;
+    
+    
+    
+}
+
+.div__div {
+   display: flex;
+    min-width: 300p;
+    align-self: center;
     justify-content: center;
+    height: 100%;
+    padding: 10px auto;
+    min-height: 180px;
+    margin: 10px 10px;
 }
 
 .div__iframe {
-    margin: 10px ;
+    
+    
+    display: flex;
+    align-items: center;
+    margin: 10px 10px;
 }
 
 .div__h3 {
@@ -496,11 +533,16 @@ flex-direction: column;
     
 /*************************** MUSICA Y VIDEOS **********************/
     .div__iframe {
-        min-height: 530px;
-        min-width: 315px;
+        min-height: 426px;
+        min-width: 758px;
 
         }
 
+    .div__div {
+        width: 7px;
+    }
+
+    
     /*------------------ E P K ---------------------*/
 
     .main__article--destokp {
