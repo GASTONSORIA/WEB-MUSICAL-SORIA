@@ -86,7 +86,7 @@ h1 a:hover {
     flex-flow: row wrap;
     align-items: center;
     justify-content: space-evenly;
-    background-color: khaki;
+    background-image: linear-gradient(to bottom, seashell, khaki);
     
     margin-bottom: 20px;
     
@@ -102,7 +102,7 @@ h1 a:hover {
     font-size: 16px;
     padding: 3px 10px;
     text-decoration: none;
-    
+    font-weight: 600;
 }
 
 li a:hover {
@@ -207,13 +207,16 @@ flex-direction: column;
 /**********************footer******************************/
 
 .body__footer {
-    background-color: rgba(227, 255, 227, 0.767);
+    /* background-color: rgba(227, 255, 227, 0.767); */
+    background-image: url(../img/degradado-footer.svg);
+    background-size: cover;
     height: 100%;
     border-top: 2px solid rgba(141, 118, 13, 0.5);
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: seashell;
 }
 
 .footer__p {
